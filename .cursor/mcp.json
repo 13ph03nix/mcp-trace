@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "mcp_square_api": {
+      "env": {
+        "HTTPS_PROXY": "http://127.0.0.1:8080",
+        "HTTP_PROXY": "http://127.0.0.1:8080",
+        "NODE_OPTIONS": "--require ./proxy-preload.cjs"
+      },
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://mcp.squareup.com/sse"
+      ]
+    }
+  }
+}
